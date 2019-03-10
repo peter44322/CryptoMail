@@ -25,8 +25,8 @@ app.get("/mine", (req, res) => {
     res.render('index', { id, user })
 });
 
-app.get("/mine", (req, res) => {
-    user.BlockChain.mine();
+app.get("/request_largest", (req, res) => {
+    connection.request_largest();
     res.render('index', { id, user })
 });
 
