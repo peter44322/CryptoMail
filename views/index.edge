@@ -1,0 +1,66 @@
+@layout('layouts.app')
+
+@section('title')
+  Home
+@endsection
+
+@section('description')
+SW2 Project :D
+@endsection
+
+
+@section('content')
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+<h6>my id :{{id}}</h6>
+@each(block in user.BlockChain.blocks )
+
+      <div class="row">
+       
+        <div class="col-md-8">
+          <div class="post-preview">
+            <a >
+              <h2 class="post-title">
+              {{block.timeStamp}}
+              </h2>
+
+              
+              <span >
+                {{block.hash}}
+                </span>
+                <span >
+                  {{block.mail.to}} - {{block.mail.from}} - {{block.mail.content}}
+                  </span>
+             
+            </a>
+        
+        </div>
+
+      </div>
+      <hr>
+
+      @endeach
+
+      
+
+
+
+
+
+  </div>
+  
+  <div class="clearfix">
+    <a class="btn btn-primary float-right" href="/mine">Mine</a>
+  </div> 
+
+  <div class="clearfix">
+    <a class="btn btn-primary float-right" href="/largest">Request largest</a>
+  </div> 
+</div>
+
+</div>
+</div>
+
+
+@endsection

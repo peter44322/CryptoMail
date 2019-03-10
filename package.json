@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,11 @@
     "dat-swarm-defaults": "^1.0.2",
     "discovery-swarm": "^5.1.4",
     "elliptic": "^6.4.1",
+    "express": "^4.16.4",
+    "express-edge": "^1.0.0",
     "get-port": "^4.2.0",
-    "portfinder": "^1.0.20"
+    "nodemon": "^1.18.10",
+    "portfinder": "^1.0.20",
+    "startbootstrap-clean-blog": "^5.0.4"
   }
 }
