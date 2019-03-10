@@ -25,7 +25,7 @@ app.get("/mine", (req, res) => {
     res.render('index', { id, user })
 });
 
-app.get("/request_largest", (req, res) => {
+app.get("/largest", (req, res) => {
     connection.request_largest();
     res.render('index', { id, user })
 });
